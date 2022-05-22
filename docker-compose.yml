@@ -1,0 +1,12 @@
+version: '3'
+services:
+  redis:
+    # will build ./docker/redis/Dockerfile
+    build: ./docker/redis
+    ports:
+      - "6379:6379"
+  cassandra:
+    # will build ./docker/cassandra/Dockerfile
+    build: ./docker/cassandra
+    ports:
+      - "9042:9042"
