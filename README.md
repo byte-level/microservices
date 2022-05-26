@@ -8,5 +8,13 @@ docker build -t redis .
 # Run docker image
 docker run -dp 3000:3000 redis
 
+# multi-module setup
+```
+mvn archetype:generate -DgroupId=com.microservice -DartifactId=parent-project
+
+mvn archetype:generate -DgroupId=com.microservice -DartifactId=redis
+mvn archetype:generate -DgroupId=com.microservice -DartifactId=cassandra
+mvn archetype:generate -DgroupId=com.microservice -DartifactId=app
+```
 
 
