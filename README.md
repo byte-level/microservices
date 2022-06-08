@@ -17,4 +17,20 @@ mvn archetype:generate -DgroupId=com.microservice -DartifactId=cassandra
 mvn archetype:generate -DgroupId=com.microservice -DartifactId=app
 ```
 
+## Building the project
+#### Ported from https://github.com/nerfologist/dropwizard-restful-api/edit/master/README.md
+`mvn clean package [-DskipTests]`
+
+## Starting the server
+`java -jar target/dropwizard-restful-api-1.0-SNAPSHOT.jar server config.yml`
+
+## Example calls
+```
+GET localhost:8080/contacts
+GET localhost:8080/contacts/1
+DELETE localhost:8080/contacts/1
+POST localhost:8080/contacts
+PUT localhost:8080/contacts/1
+```
+
 
