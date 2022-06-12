@@ -41,7 +41,7 @@ mvn archetype:generate -DgroupId=com.microservice -DartifactId=app
 `mvn clean package [-DskipTests]`
 
 ## Starting the server
-`java -jar target/dropwizard-restful-api-1.0-SNAPSHOT.jar server config.yml`
+`java -jar target/app-1.0-SNAPSHOT.jar server config.yml`
 
 ## Example calls
 ```
