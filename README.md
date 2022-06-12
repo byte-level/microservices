@@ -52,4 +52,7 @@ POST localhost:8080/contacts
 PUT localhost:8080/contacts/1
 ```
 
-
+Admin port
+```
+GET localhost:8081/
+```
